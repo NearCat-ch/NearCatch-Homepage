@@ -17,7 +17,7 @@ export default {
 
 <style scoped>
     .header {
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0);
         position: fixed;
         top: 0;
         height: 70px;
@@ -26,6 +26,7 @@ export default {
         display: flex;
         align-items: center;
         /* margin-bottom: 0; */
+
     }
     .imgbox {
         margin-left: 30px;

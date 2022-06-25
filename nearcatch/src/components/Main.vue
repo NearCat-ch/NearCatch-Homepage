@@ -2,13 +2,19 @@
   <div class="first">
     <!-- 텍스트 -->
     <div class="firstText">
-      <h1 style="margin-top:150px;">당신의 인연이 궁금하신가요?</h1>
-      <div style="">
-        <h1 style="display: inline;">NearCat:ch</h1>
-        <h1 style="display: inline;">를 다운로드하세요!</h1>
+      <h1 class="text" style="margin-top:150px;">당신의 인연이 궁금하신가요?</h1>
+      <div>
+        <h1 style="display: inline; color: yellow">NearCat:ch</h1>
+        <h1 class="text" style="display: inline;">를 다운로드하세요!</h1>
       </div>
-      <h5 style="margin-top:20px">니어캐치는 10m 반경 주변 유저를 탐색해</h5>
-      <h5>당신이 설정한 관심사로 인연을 매칭시킵니다.</h5>
+      <h5 class="text" style="margin-top:20px">니어캐치는 10m 반경 주변 유저를 탐색해</h5>
+      <h5 class="text">당신이 설정한 관심사로 인연을 매칭시킵니다.</h5>
+    </div>
+    <!-- 앱스토어 이미지 -->
+    <div class="appstore">
+      <a href="https://apps.apple.com/kr/app/nearcat-ch/id1630219872">
+        <img src="../assets/app-store.png" alt="">
+      </a>
     </div>
     <!-- 캐러셀 -->
     <div class="carouselArea">
@@ -42,18 +48,29 @@ export default {
 </script>
 
 <style scoped>
+.appstore {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
 .first {
   background-color: rgb(255, 255, 255);
   height: 100vh;
   overflow: hidden;
+  background-image: url('../assets/WebBackground.png');
 }
 .firstText {
   /* display: flex; */
   font-family: "Noto Sans Jp",sans-serif;
   justify-content: center;
   margin-top: 70px;
-  margin-bottom: 70px;
   text-align:center;
+}
+.text {
+  color: white;
 }
 
 .carouselArea {
