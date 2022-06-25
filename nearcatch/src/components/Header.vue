@@ -4,11 +4,10 @@
         <div class="imgbox">
             <img src="../assets/appstore.png" alt="" class="icon">
         </div>
-        <h4 class="content">Near Cat:ch</h4>
+        <h5 class="content">Near Cat:ch</h5>
     </div>
     <!-- 상단 헤더 끝 -->
 </template>
-
 
 <script>
 export default {
@@ -30,7 +29,7 @@ export default {
     }
     .imgbox {
         margin-left: 30px;
-        width: 50px;
+        width: 30px;
         border-radius: 30%;
         overflow: hidden;
     }

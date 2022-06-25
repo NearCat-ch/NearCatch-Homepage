@@ -1,83 +1,68 @@
 <template>
-  <v-app>
-    <v-main>
-      <!-- 메인1 -->
-      <section class="first">
-        <v-sheet
-          class="d-flex align-center"
-          color="#222222"
-          height="100%"
-        >
-          <v-container>
-            <v-responsive width="300">
-              <h3 class="text-h3" style="color:white;">
-                Near Cat:ch
-              </h3>
-              <p class="mt-4 text-medium-emphasis" style="color:white;">
-                당신의 인연의 별을 찾고 싶으신가요? 니어캐치를 사용해보세요!
-              </p>
-            </v-responsive>
-          </v-container>
-
-          <v-container>
-            <v-img
-              max-width="200"
-              src="../assets/휴대폰 화면1.png"
-            />
-          </v-container>
-        </v-sheet>
-      </section>
-      <!-- 메인1 끝-->
-
-
-      <!-- 메인2 -->
-      <v-sheet class="second">
-        <section id="filter">
-          <v-container>
-            <v-row justify="space-between">
-              <v-col cols="auto">
-                <v-responsive width="350">
-                  <h2 class="text-h5">
-                    당신의 인연을 니어캣이 찾아줄거에요
-                  </h2>
-                  <p class="mt-3">
-                    니어캐치는 여러분이 설정한 관심사를 매칭시킵니다.
-                  </p>
-                  <p>
-                    10m 내에 당신의 인연을 찾으면 생기는 진동을 느껴보세요.
-                  </p>
-
-
-                </v-responsive>
-              </v-col>
-              <!-- 적절한 이미지 -->
-              <v-img
-                max-width="250"
-                src="../assets/nearcat.png"
-              />
-            </v-row>
-          </v-container>
-        </section>
-      </v-sheet>
-
-    </v-main>
-  </v-app>
+  <div class="first">
+    <!-- 텍스트 -->
+    <div class="firstText">
+      <h1 style="margin-top:150px;">당신의 인연이 궁금하신가요?</h1>
+      <div style="">
+        <h1 style="display: inline;">NearCat:ch</h1>
+        <h1 style="display: inline;">를 다운로드하세요!</h1>
+      </div>
+      <h5 style="margin-top:20px">니어캐치는 10m 반경 주변 유저를 탐색해</h5>
+      <h5>당신이 설정한 관심사로 인연을 매칭시킵니다.</h5>
+    </div>
+    <!-- 캐러셀 -->
+    <div class="carouselArea">
+      <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../assets/휴대폰 화면1.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/휴대폰 화면2.png" class="d-block w-100" alt="..." />
+        </div>
+        <!-- <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="..." />
+        </div> -->
+      </div>
+    </div>
+    </div>
+    
+  </div>
 </template>
 
 
 <script>
-
 export default {
-  name: 'MainView',
+  name: "MainView",
 };
 </script>
 
 <style scoped>
-  .second {
-    background-color: rgba(93, 93, 255, 0.424);
-  }
-  .first {
-    height: 100%;
-    background-image: "../assets/nearcat.png";
-  }
+.first {
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  overflow: hidden;
+}
+.firstText {
+  /* display: flex; */
+  font-family: "Noto Sans Jp",sans-serif;
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  text-align:center;
+}
+
+.carouselArea {
+  /* margin-top: 20%; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.carousel {
+  width: 20%;
+}
 </style>
