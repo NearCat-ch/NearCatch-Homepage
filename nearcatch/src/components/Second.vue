@@ -1,5 +1,7 @@
 <template>
-    
+    <div class="second">
+
+    </div>
 </template>
 
 <script>
@@ -9,5 +11,7 @@ export default {
 </script>
 
 <style scoped>
-
+    .second{
+        height: 100vh;
+    }
 </style>

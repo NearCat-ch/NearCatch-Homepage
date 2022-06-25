@@ -1,21 +1,21 @@
 <template>
   <body>
     <HeaderView/>
-    <v-app>
-      <MainView/>
-    </v-app>
+    <MainView/>
+    <SecondView/>
   </body>
 </template>
 
 <script>
 import MainView from './components/Main';
 import HeaderView from './components/Header';
-
+import SecondView from './components/Second'
 export default {
   name: 'App',
   components: {
     MainView,
-    HeaderView
+    HeaderView,
+    SecondView,
   },
 
 };
