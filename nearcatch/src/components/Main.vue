@@ -12,9 +12,10 @@
     </div>
     <!-- 앱스토어 이미지 -->
     <div class="appstore">
-      <a href="https://apps.apple.com/kr/app/nearcat-ch/id1630219872">
+      <img src="../assets/frame.png" alt="" style="width:100px">
+      <!-- <a href="https://apps.apple.com/kr/app/nearcat-ch/id1630219872">
         <img src="../assets/app-store.png" alt="">
-      </a>
+      </a> -->
     </div>
     <!-- 캐러셀 -->
     <div class="carouselArea">
@@ -49,6 +50,7 @@ export default {
 
 <style scoped>
 .appstore {
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 20px;
