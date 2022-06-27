@@ -1,28 +1,42 @@
 <template>
   <div class="second">
-    <h1 style="text-align: center;">FAQ</h1>
-    <div style="width: 100%; display: flex; justify-content:center;">
-      <div class="FAQ" style="width:50%;">
-        <div >
-            <button class="accordion" @click="togglefirst">니어캐치는 누가 만들었나요?</button>
-            <ul v-if="first">
-                <li>이시발</li>
-                <li>좆시발</li>
-            </ul>
-            <!-- <div class="panel" >
+    <h1 style="text-align: center; padding-top: 25vh; padding-bottom: 30px">FAQ</h1>
+    <div style="width: 100%; display: flex; justify-content: center">
+      <div class="FAQ" style="width: 30%">
+        <div class="FAQ-list">
+          <button class="accordion" @click="togglefirst">
+            Q. 니어캐치는 누가 만들었나요?
+          </button>
+          <ul v-if="first">
+            <li>
+              A. 애플 개발자 아카데미에서 모인 6명의 잘생긴 남자들. Team 2PM이 만들었습니다.
+            </li>
+          </ul>
+          <!-- <div class="panel" >
             <p>내용 1</p>
             </div> -->
         </div>
 
-
-        <button class="accordion" @click="togglesecond">로그인이 필요한가요?</button>
-        <div class="panel">
-          <p>내용 3</p>
+        <div class="FAQ-list">
+          <button class="accordion" @click="togglesecond">
+            Q. 로그인이 필요한가요?
+          </button>
+          <ul v-if="second">
+            <li>
+                A. 니어캐치는 로그인 기능을 따로 제공하지 않습니다. 간단하게 프로필을 작성하여 니어캐치를 즐겨보세요!
+            </li>
+          </ul>
         </div>
 
-        <button class="accordion" @click="togglethird">안전한 서비스 인가요?</button>
-        <div class="panel">
-          <p>내용 2</p>
+        <div class="FAQ-list">
+          <button class="accordion" @click="togglethird">
+            Q. 안전한 서비스 인가요?
+          </button>
+          <ul v-if="third">
+            <li>
+              A. 저희 서비스는 개인 정보를 수집하지 않습니다. 특정 기능(프로필 이미지 설정을 위한 앨범, 기기 탐색을 위한 Nearby interation 등)에 대한 권한만 허용하시면, 저희 서비스를 안전하게 사용할 수 있습니다.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -32,48 +46,48 @@
 <script>
 export default {
   name: "SecondView",
-  data: ()=>{
+  data: () => {
     return {
-        first: false,
-        second: false,
-        third: false,
-    }
+      first: false,
+      second: false,
+      third: false,
+    };
   },
   methods: {
-    togglefirst(){
-        if (this.first == false) {
-            this.first = true
-            this.second = false
-            this.third = false
-        } else {
-            this.first = false
-        }
-    }, 
-    togglesecond(){
-        if (this.second == false) {
-            this.first = false
-            this.second = true
-            this.third = false
-        } else {
-            this.second = false
-        }
+    togglefirst() {
+      if (this.first == false) {
+        this.first = true;
+        this.second = false;
+        this.third = false;
+      } else {
+        this.first = false;
+      }
     },
-    togglethird(){
-        if (this.third == false) {
-            this.first = false
-            this.second = false
-            this.third = true
-        } else {
-            this.third = false
-        }
-    }
-
+    togglesecond() {
+      if (this.second == false) {
+        this.first = false;
+        this.second = true;
+        this.third = false;
+      } else {
+        this.second = false;
+      }
+    },
+    togglethird() {
+      if (this.third == false) {
+        this.first = false;
+        this.second = false;
+        this.third = true;
+      } else {
+        this.third = false;
+      }
+    },
   },
 };
 </script>
 
 <style scoped>
 .second {
+    background-color: rgba(247, 249, 253);
   height: 100vh;
   /* display: flex; */
   /* justify-content: center; */
@@ -84,33 +98,39 @@ export default {
   text-align: center;
 }
 .accordion {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  /* box-shadow: 0 0 7px rgb(228, 228, 228);; */
   cursor: pointer;
-  padding: 16px;
+  /* padding: 16px; */
+    height: 50px;
   width: 100%;
   outline: none;
   border: none;
-  text-align: left;
-  font-size: 16px;
+  text-align: center;
+  font-size: 15px;
   transition: 0.4s;
 }
 
-.active,
+.accordion-active {
+      /* background-color: #ffffff; */
+  /* box-shadow: 0 0 7px rgb(228, 228, 228);; */
+  cursor: pointer;
+  /* padding: 16px; */
+    height: 50px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
 .accordion:hover {
   background-color: #f5f5f5;
   font-weight: bold;
 }
 
-.accordion:after {
-  content: "\002B";
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
 
-.active:after {
-  content: "\2212";
-}
 
 .panel {
   padding: 0 16px;
@@ -120,4 +140,29 @@ export default {
   transition: max-height 0.2s ease-out;
   border-bottom: 1px solid #eeeeee;
 }
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 20px;
+  margin: 0;
+  font-size: 14px;
+  
+}
+
+
+.FAQ-list {
+    /* height: 50px; */
+    box-shadow: 0 0 7px rgb(228, 228, 228);;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.933);
+    border-style: solid rgba(255, 255, 255, 0.933);;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+li {
+    margin: 20px 20px 0px 20px;
+}
+
 </style>

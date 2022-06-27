@@ -33,7 +33,7 @@ export default {
 
 <style scoped>
     .header1 {
-        background-color: rgba(255,255,255);
+        background-color: rgba(247, 249, 253);
         position: fixed;
         top: 0;
         height: 70px;
@@ -72,6 +72,6 @@ export default {
     .content2 {
         margin-bottom: 0;
         padding-left: 10px;
-        color: white;
+        color: rgba(247, 249, 253);
     }
 </style>
