@@ -1,11 +1,11 @@
 <template>
   <div class="second">
-    <h1 style="text-align: center; magin-top: 100px">FAQ</h1>
-    <div style="width: 100%; display:flex; justify-content: center;">
-      <div class="FAQ" style="width:50%">
-        <div class="rect">
+    <h1 style="text-align: center;">FAQ</h1>
+    <div style="width: 100%; display: flex; justify-content:center;">
+      <div class="FAQ" style="width:50%;">
+        <div >
             <button class="accordion" @click="togglefirst">니어캐치는 누가 만들었나요?</button>
-            <ul v-if="first" style="margin-bottom: 0;">
+            <ul v-if="first">
                 <li>이시발</li>
                 <li>좆시발</li>
             </ul>
@@ -77,16 +77,47 @@ export default {
   height: 100vh;
   /* display: flex; */
   /* justify-content: center; */
-  align-items: center;
+  /* align-items: center; */
   width: 100%;
 }
 .FAQ {
   text-align: center;
 }
-.rect {
-    border: 10px;
-    border-color: black;
+.accordion {
+  background-color: #ffffff;
+  cursor: pointer;
+  padding: 16px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  transition: 0.4s;
 }
 
+.active,
+.accordion:hover {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
 
+.accordion:after {
+  content: "\002B";
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 16px;
+  background-color: #ffffff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-bottom: 1px solid #eeeeee;
+}
 </style>
