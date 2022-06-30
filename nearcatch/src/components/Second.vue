@@ -1,6 +1,6 @@
 <template>
   <div class="second">
-    <h1 style="text-align: center; padding-top: 25vh; padding-bottom: 30px">FAQ</h1>
+    <h1 style="text-align: center; padding-top: 15vh; padding-bottom: 30px">FAQ</h1>
     <div style="width: 100%; display: flex; justify-content: center">
       <div class="FAQ" style="width: 30%">
         <div class="FAQ-list">
@@ -88,7 +88,7 @@ export default {
 <style scoped>
 .second {
     background-color: rgba(247, 249, 253);
-  height: 100vh;
+  height: 70vh;
   /* display: flex; */
   /* justify-content: center; */
   /* align-items: center; */

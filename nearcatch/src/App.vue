@@ -3,19 +3,22 @@
     <HeaderView/>
     <MainView/>
     <SecondView/>
+    <FooterView/>
   </body>
 </template>
 
 <script>
 import MainView from './components/Main';
 import HeaderView from './components/Header';
-import SecondView from './components/Second'
+import SecondView from './components/Second';
+import FooterView from './components/Footer';
 export default {
   name: 'App',
   components: {
     MainView,
     HeaderView,
     SecondView,
+    FooterView,
   },
 
 };
