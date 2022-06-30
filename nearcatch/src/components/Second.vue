@@ -1,5 +1,5 @@
 <template>
-  <div class="second">
+  <div :class="{'second': !first & !second & !third, 'second1':first, 'second2': second,'second3': third }">
     <h1 style="text-align: center; padding-top: 15vh; padding-bottom: 30px">FAQ</h1>
     <div style="width: 100%; display: flex; justify-content: center">
       <div class="FAQ" style="width: 30%">
@@ -87,13 +87,45 @@ export default {
 
 <style scoped>
 .second {
-    background-color: rgba(247, 249, 253);
+  background-color: rgba(247, 249, 253);
   height: 70vh;
+  /* overflow:auto;  */
   /* display: flex; */
   /* justify-content: center; */
   /* align-items: center; */
   width: 100%;
 }
+
+.second1 {
+  background-color: rgba(247, 249, 253);
+  height: calc(70vh + 42px);
+  /* overflow:auto;  */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 100%;
+}
+
+.second2 {
+  background-color: rgba(247, 249, 253);
+  height: calc(70vh + 42px);
+  /* overflow:auto;  */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 100%;
+}
+
+.second3 {
+  background-color: rgba(247, 249, 253);
+  height: calc(70vh + 80px);
+  /* overflow:auto;  */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 100%;
+}
+
 .FAQ {
   text-align: center;
 }
