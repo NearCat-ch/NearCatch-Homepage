@@ -5,7 +5,7 @@
       <div class="FAQ" style="width: 30%">
         <div class="FAQ-list">
           <button class="accordion" @click="togglefirst">
-            Q. 니어캐치는 누가 만들었나요?
+            Q. 니어캐치 어드벤쳐는 누가 만들었나요?
           </button>
           <ul v-if="first">
             <li>
@@ -23,7 +23,7 @@
           </button>
           <ul v-if="second">
             <li>
-                A. 니어캐치는 로그인 기능을 따로 제공하지 않습니다. 간단하게 프로필을 작성하여 니어캐치를 즐겨보세요!
+                A. 니어캐치 어드벤쳐는 Apple 로그인, 구글 로그인으로 간단하게 로그인하여 즐길 수 있습니다. 
             </li>
           </ul>
         </div>
@@ -34,7 +34,7 @@
           </button>
           <ul v-if="third">
             <li>
-              A. 저희 서비스는 개인 정보를 수집하지 않습니다. 특정 기능(프로필 이미지 설정을 위한 앨범, 기기 탐색을 위한 Nearby interation 등)에 대한 권한만 허용하시면, 저희 서비스를 안전하게 사용할 수 있습니다.
+              A. 저희 서비스는 개인 정보를 수집하지 않습니다. 특정 기능(주변 기기 탐색을 위한 Nearby interation 등)에 대한 권한만 허용하시면, 저희 서비스를 안전하게 사용할 수 있습니다.
             </li>
           </ul>
         </div>
