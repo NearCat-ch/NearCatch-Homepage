@@ -31,6 +31,9 @@
         <div class="carousel-item">
           <img src="../assets/휴대폰 화면2.png" class="d-block w-100" alt="..." />
         </div>
+        <div class="carousel-item">
+          <img src="../assets/휴대폰 화면3.png" class="d-block w-100" alt="..." />
+        </div>
         <!-- <div class="carousel-item">
           <img src="..." class="d-block w-100" alt="..." />
         </div> -->
