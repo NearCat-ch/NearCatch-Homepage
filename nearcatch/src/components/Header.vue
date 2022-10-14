@@ -4,7 +4,7 @@
         <div class="imgbox">
             <img src="../assets/appstore.png" alt="" class="icon">
         </div>
-        <h5 :class="{'content1': scrollPosition > windowHeight - 70, 'content2': scrollPosition <= windowHeight - 70 }">Near Cat:ch</h5>
+        <h5 :class="{'content1': scrollPosition > windowHeight - 70, 'content2': scrollPosition <= windowHeight - 70 }">NearCatch Adventure</h5>
     </div>
     <!-- 상단 헤더 끝 -->
 </template>

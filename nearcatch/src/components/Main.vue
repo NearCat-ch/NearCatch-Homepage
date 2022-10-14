@@ -12,7 +12,7 @@
     </div>
     <!-- 앱스토어 이미지 -->
     <div class="appstore">
-      <img src="../assets/frame.png" alt="" style="width:100px">
+      <img src="../assets/nearcatchAdventureQR.png" alt="" style="width:100px">
       <!-- <a href="https://apps.apple.com/kr/app/nearcat-ch/id1630219872">
         <img src="../assets/app-store.png" alt="">
       </a> -->
