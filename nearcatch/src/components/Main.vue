@@ -7,8 +7,8 @@
         <h1 style="display: inline; color: yellow">NearCat:ch</h1>
         <h1 class="text" style="display: inline;">를 다운로드하세요.</h1>
       </div>
-      <h5 class="text" style="margin-top:20px">니어캐치는 10m 반경 주변 유저를 탐색해</h5>
-      <h5 class="text">당신이 설정한 관심사로 인연을 매칭시킵니다.</h5>
+      <h5 class="text" style="margin-top:20px">니어캐치는 10m 반경 주변 유저와 함께</h5>
+      <h5 class="text">게임을 즐길 수 있습니다.</h5>
     </div>
     <!-- 앱스토어 이미지 -->
     <div class="appstore">
