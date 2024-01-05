@@ -4,20 +4,6 @@
     <div style="width: 100%; display: flex; justify-content: center">
       <div class="FAQ" style="width: 30%">
         <div class="FAQ-list">
-          <button class="accordion" @click="togglefirst">
-            Q. 니어캐치 어드벤쳐는 누가 만들었나요?
-          </button>
-          <ul v-if="first">
-            <li>
-              A. 애플 개발자 아카데미에서 모인 6명의 잘생긴 남자들. Team 2PM이 만들었습니다.
-            </li>
-          </ul>
-          <!-- <div class="panel" >
-            <p>내용 1</p>
-            </div> -->
-        </div>
-
-        <div class="FAQ-list">
           <button class="accordion" @click="togglesecond">
             Q. 로그인이 필요한가요?
           </button>

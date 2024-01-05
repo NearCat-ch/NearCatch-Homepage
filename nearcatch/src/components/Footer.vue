@@ -1,10 +1,12 @@
 <template>
   <div class="footer">
     <div class="foot">
-      <h3>Team 2PM</h3>
-      <p style="margin:0;">개발자: 이준영, 최원혁, 조현민, 류현선, 김예훈, 황찬기</p>
+      <h3>nears, Inc</h3>
+      <p style="margin:0;">대표: 이준영</p>
       <p style="margin:0;">대표 번호 : 010.9582.5604</p>
-      <p>대표 이메일 : munam4@naver.com</p>
+      <p>대표 이메일 : contact@nears.io</p>
+      <p style="margin:0;">사업자 등록번호 : 151-35-01288</p>
+      <p>사업장 : 경기도 용인시 기흥구 강남서로 9, 7층 703호</p>
     </div>
 
   </div>
